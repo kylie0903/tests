@@ -8,6 +8,7 @@ const connection = mysql.createConnection({
     database: 'heroku_107edbb917886b8',
     dateStrings: 'date'
 });
+
 function getAllMemos(callback){
     connection.query(`SELECT * FROM MEMOS ORDER BY ID DESC`, (err, rows, fields) => {
         if(err) throw err;
