@@ -10,7 +10,7 @@ const connection = mysql.createConnection({
 });
 
 function getAllMemos(callback){
-    connection.query(`SELECT * FROM MEMOS ORDER BY ID DESC`, (err, rows, fields) => {
+    connection.query(`SELECT * FROM memos ORDER BY ID DESC`, (err, rows, fields) => {
         if(err) throw err;
         callback(rows);
     });
