@@ -3,7 +3,7 @@ const mysql = require('mysql');
 const connection = mysql.createConnection({
     host:'us-cdbr-east-05.cleardb.net',
     user:'be757f1e07e52f',
-    password:'da269012234',
+    password:'da269012',
     port:3306,
     database: 'heroku_107edbb917886b8',
     dateStrings: 'date'
