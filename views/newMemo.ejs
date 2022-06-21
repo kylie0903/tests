@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang='utf-8'>
-    <meta charset="utf-8">
-    <head>
-        <title>new Memo Add</title>
-    </head>
-    <body>
-            <h1>new Memo Add</h1>
-        <% if(typeof errs !== "undefined") { %>
-            <% errs.forEach((err)=>{%>
-                <h4 style="color: red;"><%=err.param%> : <%=err.msg%></h4>
-            <% }) %>
-        <% } %>
-        <form method="POST" action="/store" >
-            <textarea name="content"></textarea>
-            <input type="submit" value="submit">
-            <input type="button" value="back" onclick="javascript:location.href='/'">
-        </form>
-    </body>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>new memo</h1>
+    <% if(typeof errs !== 'undefined'){ %>
+        <% errs.forEach(()=>{ %>
+            <h3><%=err.param%> : <%=err.msg%></h3>
+        <%})%>
+    <%}%>
+    <form method="POST" action="/store">
+        <textarea name="content"></textarea>
+        <input type="submit" value="submit">
+        <input type="button" value="back" onclick="javascript:location.href='/'">
+    </form>
+</body>
 </html>

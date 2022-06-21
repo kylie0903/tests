@@ -16,7 +16,7 @@
       <% rows.forEach((row, index)=>{ %>
         <tr>
           <td><%=row.CONTENT%></td>
-          <td><%=row.UPDATED_AT%></td>
+          <td><%=row.UPDATED%></td>
           <td>
             <input type="button" onclick="javascript:location.href='/updateMemo?id=<%=row.ID%>'" value="Edit">
             <input type="button" onclick="javascript:location.href='/deleteMemo?id=<%=row.ID%>'" value="Del">
