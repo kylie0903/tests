@@ -1,0 +1,124 @@
+
+.gheadban{
+    background-position: center center;
+    background-color: white;
+    background-image: url(../img/seomoon/gongziban_copy.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.wrap1200_htopw a{
+    color: #333;
+    margin-right: 10px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.wrap1200_htop>div>a:hover{
+    text-decoration: underline;
+}
+
+colgroup>.num{
+    width: 10%;
+}
+colgroup>.gone{
+    width: 10%;
+}
+
+colgroup>.title{
+    width: 60%;
+}
+.gtablelist_wrap>table{
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #030303;
+    table-layout: fixed;
+    font-size: 16px;
+    font-weight: 300;
+    color: #525252;
+}
+.gtablelist_wrap>table{
+    width: 95%;
+    margin: auto;
+}
+
+.gtablelist_wrap>table>thead>tr>th{
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 25px 0 25px 0;
+    vertical-align: middle;
+    line-height: 18px;
+}
+.gtablelist_wrap>table>.gtbody>tr>td{
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    font-weight: 400;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 25px 0 25px 0;
+    vertical-align: middle;
+    line-height: 18px;
+    text-align: center;
+}
+.gtablelist_wrap>table>.gtbody>tr>td>a{
+    color: black;
+}
+
+.gtablelist_wrap>table>.gtbody>tr>td:nth-child(2){
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    
+    
+}
+
+@media only screen and (max-width: 900px){ 
+    
+    .gtablelist_wrap>table>thead>tr>th{
+        font-size: 14px;
+    }
+    .gtablelist_wrap>table>.gtbody>tr>td{
+        font-size: 14px;
+        
+    }      
+    .gtablelist_wrap>table>thead>tr>th:nth-child(3){
+        display: none;
+    }
+    .gtablelist_wrap>table>thead>tr>th:nth-child(5){
+        display: none;
+    }
+    .gtablelist_wrap>table>.gtbody>tr>td:nth-child(3){
+        display: none;
+    }
+    .gtablelist_wrap>table>.gtbody>tr>td:nth-child(5){
+        display: none;
+    }
+    
+    colgroup>.title{
+        width: 70%;
+    }
+    colgroup>.num{
+        width: 15%;
+    }
+    colgroup>.gone{
+        display: none;
+    }
+    
+  
+    
+}
+@media only screen and (max-width: 600px){
+    
+}
