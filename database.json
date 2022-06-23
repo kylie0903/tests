@@ -1,6 +1,7 @@
 {
-    "host":"localhost",
-    "user" : "root",
-    "password": "1234",
-    "database":"memo"
+    "host":"us-cdbr-east-05.cleardb.net",
+    "user":"be757f1e07e52f",
+    "password":"da269012",
+    "port":3306,
+    "database": "heroku_107edbb917886b8"
 }

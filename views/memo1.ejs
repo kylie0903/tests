@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>memo</h1>
+    <input type="button" value="새메모작성" onclick="javascript:location.href='/newMemo'">
+    <table border='1'>
+      <tr>
+        <th>num</th>
+        <th>Memo</th>
+        <th>Date</th>
+        <th>Edit</th>
+      </tr>
+      <% 
+      for(i=(page*page_num)-page_num; i<(page*page_num); i++){
+       if(i > leng){
+        i++;
+       }else{       
+        var list = rows[i];
+        
+      %>
+        <tr>
+          <td><%= i+1 %></td>
+          <td><%=list.CONTENT%></td>
+          <td><%=list.UPDATED%></td>
+          <td>
+            <input type="button" onclick="javascript:location.href='/updateMemo?id=<%=row.ID%>'" value="Edit">
+            <input type="button" onclick="javascript:location.href='/deleteMemo?id=<%=row.ID%>'" value="Del">
+          </td>
+        </tr>
+        <% } %>
+      <% } %>
+      <tr>
+        <td colspan="5">
+          <%
+          for(j=0; j<rows.length/10; j++)
+          %>
+          <a href="/list.<%= j+i %>"><%= j+1 %></a>
+          <% } %>
+        </td>
+      </tr>
+    </table>
+</body>
+</html>

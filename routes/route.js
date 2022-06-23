@@ -3,9 +3,15 @@ var router = express.Router();
 const { check, validationResult } = require('express-validator');
 const db = require('./../db.js');
 
+
 router.get('/', (req, res) => {
+    var page = req.params.page;
     db.getAllMemos((rows) => {
-        res.render('memo', { rows: rows })
+        res.render('memo', {
+            rows: rows,
+            // page: page,
+            // leng: Object.keys(rows).length - 1, page_num: 10, pass: true
+        })
     });
     //res.send('test');
 });

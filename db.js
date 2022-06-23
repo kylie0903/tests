@@ -1,11 +1,12 @@
 const mysql = require('mysql');
-
+var db_config = require('./database.json');
+    
 const connection = mysql.createConnection({
-    host:'us-cdbr-east-05.cleardb.net',
-    user:'be757f1e07e52f',
-    password:'da269012',
+    host:db_config.host,
+    user:db_config.user,
+    password:db_config.password,
     port:3306,
-    database: 'heroku_107edbb917886b8',
+    database: db_config.database,
     dateStrings: 'date'
 });
 
